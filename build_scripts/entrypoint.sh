@@ -1,7 +1,7 @@
 #!/bin/bash
 # docker entrypoint script.
 
-# assign a default for the database_user
+# assign a default for the database_user / role
 DB_USER=${DATABASE_DB:-postgres}
 DB_HOST=${DATABASE_HOST:-db}
 

@@ -15,7 +15,7 @@ services:
             context: .
         environment:
             - SECRET_KEY_BASE=${SECRET_KEY_BASE}
-            - DATABASE_DB=postgres
+            - DATABASE_DB=${DATABASE_DB}
             - DATABASE_HOST=db
         ports:
             - 80:4000
@@ -27,13 +27,12 @@ services:
         image: postgres:10-alpine
         volumes:
             - ./docker-volumes/postgresql:/var/lib/postgresql
-            # - ./build_scripts/pg_init:/docker-entrypoint-initdb.d
+            - ./build_scripts/pg:/docker-entrypoint-initdb.d
         environment:
-            - POSTGRES_DB=postgres
             # - POSTGRES_DB=${DATABASE_DB}
-            - POSTGRES_USER=postgres
-            - POSTGRES_PASSWORD=postgres
-            # - POSTGRES_MULTIPLE_DATABASES=postgres
+            - POSTGRES_USER=${DATABASE_USER}
+            - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+            - POSTGRES_MULTIPLE_DATABASES=${POSTGRES_MULTIPLE_DATABASES}
         networks:
             - internal
 

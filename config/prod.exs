@@ -10,7 +10,7 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :project_tides, ProjectTidesWeb.Endpoint,
-  url: [host: System.get_env("SECRET_KEY_BASE_URLBASE"), port: 80]
+  url: [host: System.get_env("BASE_URL"), port: 80]
   # cache_static_manifest: "priv/static/cache_manifest.json"
 
 # Do not print debug messages in production

@@ -19,11 +19,13 @@ Have you talked with developers who may be interested to learn about why they ha
 	- https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 	- https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46
 
+<!--
 [![CircleCI](https://img.shields.io/circleci/project/github/ProjectTides/tides.svg?style=flat-square)](https://circleci.com/gh/ProjectTides/tides/tree/master)
 [![TravisCI](https://travis-ci.org/ProjectTides/tides.png)](https://travis-ci.org/ProjectTides/tides)
 [![CodeCov](https://img.shields.io/codecov/c/github/ProjectTides/tides/v3.svg?style=flat-square)](https://codecov.io/github/ProjectTides/tides)
 [![Coveralls](https://coveralls.io/repos/ProjectTides/tides/badge.svg?branch=master)](https://coveralls.io/r/ProjectTides/tides?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/ProjectTides/tides.svg)](https://codeclimate.com/github/ProjectTides/tides)
+-->
 [![License](https://img.shields.io/github/license/ProjectTides/tides?style=flat)](#License)
 
 ## Table of Contents

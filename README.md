@@ -25,7 +25,6 @@ Have you talked with developers who may be interested to learn about why they ha
 [![Coveralls](https://coveralls.io/repos/ProjectTides/tides/badge.svg?branch=master)](https://coveralls.io/r/ProjectTides/tides?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/ProjectTides/tides.svg)](https://codeclimate.com/github/ProjectTides/tides)
 [![License](https://img.shields.io/github/license/ProjectTides/tides?style=flat)](#License)
-[![License](https://img.shields.io/github/license/auth0/open-source-template?style=flat)](#License)
 
 ## Table of Contents
 

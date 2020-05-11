@@ -19,16 +19,13 @@ Have you talked with developers who may be interested to learn about why they ha
 	- https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 	- https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46
 
-Search-replace the org/repo in the badge images and links below.
-
-**Note:** See individual language directories in this repo for technology-specific badges.
-
-[![CircleCI](https://img.shields.io/circleci/project/github/auth0/open-source-template.svg?style=flat-square)](https://circleci.com/gh/auth0/open-source-template/tree/master)
-[![TravisCI](https://travis-ci.org/auth0/open-source-template.png)](https://travis-ci.org/auth0/open-source-template)
-[![CodeCov](https://img.shields.io/codecov/c/github/auth0/open-source-template/v3.svg?style=flat-square)](https://codecov.io/github/auth0/open-source-template)
-[![Coveralls](https://coveralls.io/repos/auth0/open-source-template/badge.svg?branch=master)](https://coveralls.io/r/auth0/open-source-template?branch=master)
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/auth0/open-source-template.svg)](https://codeclimate.com/github/auth0/open-source-template)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](https://opensource.org/licenses/MIT)
+[![CircleCI](https://img.shields.io/circleci/project/github/ProjectTides/tides.svg?style=flat-square)](https://circleci.com/gh/ProjectTides/tides/tree/master)
+[![TravisCI](https://travis-ci.org/ProjectTides/tides.png)](https://travis-ci.org/ProjectTides/tides)
+[![CodeCov](https://img.shields.io/codecov/c/github/ProjectTides/tides/v3.svg?style=flat-square)](https://codecov.io/github/ProjectTides/tides)
+[![Coveralls](https://coveralls.io/repos/ProjectTides/tides/badge.svg?branch=master)](https://coveralls.io/r/ProjectTides/tides?branch=master)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/ProjectTides/tides.svg)](https://codeclimate.com/github/ProjectTides/tides)
+[![License](https://img.shields.io/github/license/ProjectTides/tides?style=flat)](#License)
+[![License](https://img.shields.io/github/license/auth0/open-source-template?style=flat)](#License)
 
 ## Table of Contents
 
@@ -104,16 +101,16 @@ Consider adding:
 
 We appreciate feedback and contribution to this repo! Before you get started, please see the following:
 
-- [Auth0's general contribution guidelines](https://github.com/auth0/open-source-template/blob/master/GENERAL-CONTRIBUTING.md)
-- [Auth0's code of conduct guidelines](https://github.com/auth0/open-source-template/blob/master/CODE-OF-CONDUCT.md)
+- [Auth0's general contribution guidelines](https://github.com/ProjectTides/tides/blob/master/GENERAL-CONTRIBUTING.md)
+- [Auth0's code of conduct guidelines](https://github.com/ProjectTides/tides/blob/master/CODE-OF-CONDUCT.md)
 - [This repo's contribution guide](CONTRIBUTING.md)
 
 ## Support + Feedback
 
 Include information on how to get support. Consider adding:
 
-- Use [Issues](https://github.com/auth0/open-source-template/issues) for code-level support
-- Use [Community](https://community.auth0.com/) for usage, questions, specific cases
+- Use [Issues](https://github.com/ProjectTides/Tides/issues) for code-level support
+- Use [Community](https://coloredcow/) for usage, questions, specific cases
 - Link to other support forums and FAQs
 
 ## Vulnerability Reporting
@@ -139,7 +136,7 @@ Information on the dependencies used, if desired.
 
 ## License
 
-Link to [LICENSE](LICENSE) doc. Typically MIT but can be different for a specific platform.
+This project is covered under [The GNU General Public License v3.0](LICENSE).
 
 ## Phoenix Framework
 

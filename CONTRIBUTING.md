@@ -1,6 +1,6 @@
 # Contribution
 
-Please read [Auth0's contribution guidelines](https://github.com/auth0/open-source-template/blob/master/GENERAL-CONTRIBUTING.md).
+Please read [ProjectTides contribution guidelines](https://github.com/ProjectTides/tides/blob/master/GENERAL-CONTRIBUTING.md).
 
 ## Documentation
 

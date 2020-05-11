@@ -26,11 +26,9 @@ Have you talked with developers who may be interested to learn about why they ha
 [![Coveralls](https://coveralls.io/repos/ProjectTides/tides/badge.svg?branch=master)](https://coveralls.io/r/ProjectTides/tides?branch=master)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/ProjectTides/tides.svg)](https://codeclimate.com/github/ProjectTides/tides)
 -->
-[![License](https://img.shields.io/github/license/ProjectTides/tides?style=flat)](#License)
+[![License](https://img.shields.io/github/license/ProjectTides/tides?style=flat-square)](#License)
 
 ## Table of Contents
-
-Make sure this is updated based on the sections included:
 
 - [Project Tides](#project-tides)
   - [Table of Contents](#table-of-contents)
@@ -39,8 +37,6 @@ Make sure this is updated based on the sections included:
   - [Getting Started](#getting-started)
   - [Contributing](#contributing)
   - [Support + Feedback](#support--feedback)
-  - [Vulnerability Reporting](#vulnerability-reporting)
-  - [What is ProjectTides?](#what-is-projecttides)
   - [Thank You! (optional)](#thank-you-optional)
   - [License](#license)
 
@@ -105,19 +101,6 @@ Include information on how to get support. Consider adding:
 - Use [Issues](https://github.com/ProjectTides/Tides/issues) for code-level support
 - Use [Community](https://coloredcow/) for usage, questions, specific cases
 - Link to other support forums and FAQs
-
-## Vulnerability Reporting
-
-Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://coloredcow.com) details the procedure for disclosing security issues.
-
-## What is ProjectTides?
-
-ProjectTides helps you to easily:
-
-- point 1
-- point 2
-
-[Why ProjectTides?](https://coloredcow.com)
 
 ## Thank You! (optional)
 

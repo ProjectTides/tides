@@ -41,7 +41,6 @@ Make sure this is updated based on the sections included:
   - [What is ProjectTides?](#what-is-projecttides)
   - [Thank You! (optional)](#thank-you-optional)
   - [License](#license)
-  - [Learn more](#learn-more)
 
 ## Documentation
 
@@ -125,12 +124,3 @@ Information on the dependencies used, if desired.
 ## License
 
 This project is covered under [The GNU General Public License v3.0](LICENSE).
-
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix

@@ -1,4 +1,4 @@
-By submitting a PR to this repository, you agree to the terms within the [Auth0 Code of Conduct](https://github.com/auth0/open-source-template/blob/master/CODE-OF-CONDUCT.md). Please see the [contributing guidelines](https://github.com/auth0/open-source-template/blob/master/CONTRIBUTING.md) for how to create and submit a high-quality PR for this repo.
+By submitting a PR to this repository, you agree to the terms within the [Auth0 Code of Conduct](https://github.com/ProjectTides/tides/blob/master/CODE-OF-CONDUCT.md). Please see the [contributing guidelines](https://github.com/ProjectTides/tides/blob/master/CONTRIBUTING.md) for how to create and submit a high-quality PR for this repo.
 
 ### Description
 
@@ -14,7 +14,7 @@ By submitting a PR to this repository, you agree to the terms within the [Auth0 
 > Include any links supporting this change such as a:
 >
 > - GitHub Issue/PR number addressed or fixed
-> - Auth0 Community post
+> - Project Tides Community post
 > - StackOverflow post
 > - Support forum thread
 > - Related pull requests/issues from other repos
@@ -23,7 +23,7 @@ By submitting a PR to this repository, you agree to the terms within the [Auth0 
 
 ### Testing
 
-> Describe how this can be tested by reviewers. Be specific about anything not tested and reasons why. If this library has unit and/or integration testing, tests should be added for new functionality and existing tests should complete without errors.
+> Describe how this can be tested by reviewers. Be specific about anything not tested and reasons why. Ensure proper tests are added for new functionality and existing tests should complete without errors.
 >
 > Please include any manual steps for testing end-to-end or functionality not covered by unit/integration tests.
 >
@@ -33,6 +33,6 @@ By submitting a PR to this repository, you agree to the terms within the [Auth0 
 
 ### Checklist
 
-- [ ] I have added documentation for new/changed functionality in this PR or in auth0.com/docs
+- [ ] I have added documentation for new/changed functionality in this PR
 - [ ] All active GitHub checks for tests, formatting, and security are passing
-- [ ] The correct base branch is being used, if not `master`
+- [ ] The correct base branch `develop` is being used

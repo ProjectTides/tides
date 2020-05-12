@@ -1,13 +1,5 @@
 version: "3"
 
-# volumes:
-#     app-data:
-#       driver: local
-
-networks:
-  internal:
-    external: false
-
 services:
     app:
         image: project_tides:0.1.0
@@ -16,15 +8,18 @@ services:
         environment:
             - SECRET_KEY_BASE=${SECRET_KEY_BASE}
             - DATABASE_DB=${DATABASE_DB}
-            - DATABASE_HOST=db
+            - DATABASE_HOST=${DATABASE_HOST}
+            - DATABASE_USER=${DATABASE_USER}
+            - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+            - BASE_URL=${BASE_URL}
         ports:
             - 80:4000
-        networks:
-            - internal
         depends_on: 
             - db
     db:
         image: postgres:10-alpine
+        ports:
+            - 5460:5432
         volumes:
             - ./docker-volumes/postgresql:/var/lib/postgresql
             - ./build_scripts/pg:/docker-entrypoint-initdb.d
@@ -33,6 +28,4 @@ services:
             - POSTGRES_USER=${DATABASE_USER}
             - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
             - POSTGRES_MULTIPLE_DATABASES=${POSTGRES_MULTIPLE_DATABASES}
-        networks:
-            - internal
 

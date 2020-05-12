@@ -27,3 +27,7 @@ project_tides-*.tar
 # this depending on your deployment strategy.
 /priv/static/
 .env
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

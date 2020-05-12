@@ -6,11 +6,13 @@ use Mix.Config
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
 config :project_tides, ProjectTides.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "project_tides_test#{System.get_env("MIX_TEST_PARTITION")}",
+  username: "user1",
+  password: "pass1",
+  # database: "project_tides_test#{System.get_env("MIX_TEST_PARTITION")}",
+  database: "test_db",
   hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  pool: Ecto.Adapters.SQL.Sandbox,
+  port: 5460
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.

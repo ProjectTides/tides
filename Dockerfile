@@ -1,4 +1,4 @@
-FROM elixir:1.9-alpine as build
+FROM elixir:1.10-alpine as build
 # MAINTAINER tech@coloredcow.com
 
 # install build dependencies
@@ -36,7 +36,7 @@ RUN mix compile
 RUN mix release
 
 # prepare release image
-FROM alpine:3.9 AS app
+FROM alpine:3.11 AS app
 
 # install runtime dependencies
 RUN apk add --update bash openssl postgresql-client

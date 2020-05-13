@@ -38,7 +38,6 @@ Have you talked with developers who may be interested to learn about why they ha
 	- [Getting Started](#getting-started)
 	- [Contributing](#contributing)
 	- [Support + Feedback](#support--feedback)
-	- [Thank You! (optional)](#thank-you-optional)
 	- [License](#license)
 
 ## Documentation
@@ -91,8 +90,8 @@ Consider adding:
 
 We appreciate feedback and contribution to this repo! Before you get started, please see the following:
 
-- [ProjectTides's general contribution guidelines](https://github.com/ProjectTides/tides/blob/master/GENERAL-CONTRIBUTING.md)
-- [ProjectTides's code of conduct guidelines](https://github.com/ProjectTides/tides/blob/master/CODE-OF-CONDUCT.md)
+- [ProjectTides's general contribution guidelines](GENERAL-CONTRIBUTING.md)
+- [ProjectTides's code of conduct guidelines](CODE-OF-CONDUCT.md)
 - [This repo's contribution guide](CONTRIBUTING.md)
 
 ## Support + Feedback
@@ -100,12 +99,8 @@ We appreciate feedback and contribution to this repo! Before you get started, pl
 Include information on how to get support. Consider adding:
 
 - Use [Issues](https://github.com/ProjectTides/Tides/issues) for code-level support
-- Use [Community](https://coloredcow/) for usage, questions, specific cases
-- Link to other support forums and FAQs
-
-## Thank You! (optional)
-
-Information on the dependencies used, if desired.
+- Join [Project Tides Discord Server](https://discord.gg/6dKGwwU) for more usage, questions, specific cases with the community.
+- Email us at [contact@coloredcow.com] for more support and feedbacks.
 
 ## License
 

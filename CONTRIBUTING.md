@@ -1,6 +1,6 @@
 # Contribution
 
-Please read [ProjectTides contribution guidelines](https://github.com/ProjectTides/tides/blob/master/GENERAL-CONTRIBUTING.md).
+Please read [ProjectTides General Contribution guidelines](https://github.com/ProjectTides/tides/blob/master/GENERAL-CONTRIBUTING.md).
 
 ## Documentation
 

@@ -1,23 +1,15 @@
 # Project Tides
 
-The section after the title is where we say what this library, sample, or SDK does in a few sentences. Consider adding:
+Tides is a two-way chat platform between NGOs and their impact community that is built using WhatsApp API. The platform allows NGOs to chat with each of their beneficiaries and help them to uplift their lives. NGOs can work in various sectors such as healthcare, education, women empowerment, etc.
 
-- Short description of use case + problem(s) solved. Consider the following ([from here](https://threadreaderapp.com/thread/921921604140937216.html )):
-	- Have you described what it is and what the benefits are in a way a non-developer can understand?
-	- If someone Googles to try to learn more about it, is this description easy to find?
-	- Is this description easily skimmable? If someone looks at it for 6 seconds can they be convinced?
-	- Do you compare your tool to other similar tools so people feel educated about pros/cons of yours?
-	- If performance matters, do you have easy-to-skim benchmarks that include comparing it to other tools?
-	- Do you have a demo? If it’s open source, are there well documented and easy to build samples/demos?
-Have you talked with developers who may be interested to learn about why they haven’t tried it or don’t use it?
-- Platform/language version supported
-- Links to the project in other repos (npm, packagist, etc)
-- Information about maintained and deprecated branches
-- Repo status - maintained, deprecated, etc.
-- Other resources:
-	- https://github.com/coreinfrastructure/best-practices-badge/blob/master/doc/criteria.md
-	- https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-	- https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46
+## About the prototype
+This prototype repository covers the various technologies, connect the dots and test a working model of the platform. A most basic use case of the application is used to build the prototype. It follows like this:
+1. A beneficiary will be able to message an NGO user via WhatsApp.
+2. The message will be visible on the platform.
+3. It will get labeled with relevant keywords.
+4. A basic response will be suggested too.
+5. The NPO user will use the suggestion from the system to form a response and then send it to the beneficiary.
+
 
 <!--
 [![CircleCI](https://img.shields.io/circleci/project/github/ProjectTides/tides.svg?style=flat-square)](https://circleci.com/gh/ProjectTides/tides/tree/master)

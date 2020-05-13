@@ -45,14 +45,14 @@ EXPOSE 4000
 ENV MIX_ENV=prod
 
 # prepare app directory
-RUN mkdir /app
-WORKDIR /app
+RUN mkdir /prod
+WORKDIR /prod
 
-# copy release to app container
-COPY --from=build /app/_build/prod/rel/project_tides .
+# copy release to prod container
+COPY --from=build /prod/_build/prod/rel/project_tides .
 COPY build_scripts/entrypoint.sh .
-RUN chown -R nobody: /app
+RUN chown -R nobody: /prod
 USER nobody
 
-ENV HOME=/app
-CMD ["bash", "/app/entrypoint.sh"]
+ENV HOME=/prod
+CMD ["bash", "/prod/entrypoint.sh"]

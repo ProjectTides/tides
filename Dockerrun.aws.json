@@ -1,13 +1,30 @@
 {
-    "AWSEBDockerrunVersion": "1",
-    "Image": {
-      "Name": "023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides:latest",
-      "Update": "true"
-    },
-    "Ports": [
-      {
-        "HostPort": "80",
-        "ContainerPort": "4000"
-      }
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name": "app",
+            "image": "023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides:latest",
+            "memory": 128,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "containerPort": 4000
+                }
+            ],
+            "links": [
+                "db"
+            ]
+        },
+        {
+            "name": "db",
+            "image": "postgres:10-alpine",
+            "memory": 128,
+            "portMappings": [
+                {
+                    "hostPort": 5432,
+                    "containerPort": 5432
+                }
+            ]
+        }
     ]
-  }
+}

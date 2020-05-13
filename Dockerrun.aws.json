@@ -5,6 +5,11 @@
             "name": "app",
             "image": "023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides:latest",
             "memory": 128,
+            "command": [
+                "tail",
+                "-f",
+                "/bin/bash"
+            ],
             "portMappings": [
                 {
                     "hostPort": 80,
@@ -19,6 +24,11 @@
             "name": "db",
             "image": "postgres:10-alpine",
             "memory": 128,
+            "command": [
+                "tail",
+                "-f",
+                "/bin/bash"
+            ],
             "portMappings": [
                 {
                     "hostPort": 5432,

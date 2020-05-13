@@ -100,7 +100,7 @@ Include information on how to get support. Consider adding:
 
 - Use [Issues](https://github.com/ProjectTides/Tides/issues) for code-level support
 - Join [Project Tides Discord Server](https://discord.gg/6dKGwwU) for more usage, questions, specific cases with the community.
-- Email us at [contact@coloredcow.com] for more support and feedbacks.
+- Email us at contact@coloredcow.com for more support and feedbacks.
 
 ## License
 

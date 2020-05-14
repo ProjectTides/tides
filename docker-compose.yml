@@ -17,7 +17,7 @@ services:
             - DATABASE_PASSWORD=${DATABASE_PASSWORD}
             - BASE_URL=${BASE_URL}
         ports:
-            - 4000:4000
+            - 80:4000
         depends_on: 
             - db
         networks: 

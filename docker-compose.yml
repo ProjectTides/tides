@@ -1,5 +1,9 @@
 version: "3"
 
+networks: 
+    internal: 
+        external: false
+
 services:
     app:
         image: project_tides:0.1.0
@@ -16,6 +20,8 @@ services:
             - 4000:4000
         depends_on: 
             - db
+        networks: 
+            internal: 
     db:
         image: postgres:10-alpine
         ports:
@@ -30,4 +36,6 @@ services:
             - POSTGRES_MULTIPLE_DATABASES=${POSTGRES_MULTIPLE_DATABASES}
             - DATABASE_ROLE=${DATABASE_ROLE}
             - DATABASE_HOST=${DATABASE_HOST}
+        networks: 
+            internal: 
 

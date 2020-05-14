@@ -49,7 +49,7 @@ RUN mkdir /app
 WORKDIR /app
 
 # copy release to app container
-COPY --from=build /app/_build/app/rel/project_tides .
+COPY --from=build /app/_build/prod/rel/project_tides .
 COPY build_scripts/entrypoint.sh .
 RUN chown -R nobody: /app
 USER nobody

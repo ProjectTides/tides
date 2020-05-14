@@ -16,7 +16,7 @@ Reading and following these guidelines will help us make the contribution proces
 
 Contributions are made to this repo via Issues and Pull Requests (PRs). A few general guidelines that cover both:
 
-- If you discover a security vulnerability, please send an e-mail to contact@coloredcow.com. All security vulnerabilities will be promptly addressed.
+- If you discover a security vulnerability, please send an e-mail to opensource@coloredcow.com. All security vulnerabilities will be promptly addressed.
 - Search for existing Issues and PRs before creating your own.
 - We work hard to makes sure issues are handled in a timely manner but, depending on the impact, it could take a while to investigate the root cause. A friendly ping in the comment thread to the submitter or a contributor can help draw attention if your issue is blocking.
 

@@ -1,8 +1,8 @@
 version: "3"
 
 networks: 
-    internal: 
-        external: false
+    - tides_nw
+        
 
 services:
     app:
@@ -21,7 +21,7 @@ services:
         depends_on: 
             - db
         networks: 
-            internal: 
+            - tides_nw
     db:
         image: postgres:10-alpine
         ports:
@@ -38,5 +38,5 @@ services:
             - DATABASE_ROLE=${DATABASE_ROLE}
             - DATABASE_HOST=${DATABASE_HOST}
         networks: 
-            internal: 
+            - tides_nw
 

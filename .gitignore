@@ -29,3 +29,4 @@ project_tides-*.tar
 .env
 config/dev.exs
 config/test.exs
+.DS_Store

@@ -28,5 +28,4 @@ project_tides-*.tar
 /priv/static/
 .env
 config/dev.exs
-config/test.exs
 .DS_Store

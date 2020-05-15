@@ -38,9 +38,8 @@ This prototype repository covers the various technologies, connect the dots and 
         * Create your application database manually.
 
 5. Duplicate `dev.exs.example` and name it as `dev.exs`.
-6. Duplicate `test.exs.example` and name it as `test.exs`.  
-7. Run `mix setup`.
-8. Run `mix phx.server`
+6. Run `mix setup`.
+7. Run `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 

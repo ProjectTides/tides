@@ -1,5 +1,8 @@
 #!/bin/bash
-# docker entrypoint script.
+# It is getting called from Dockerfile
+# it is used to check if database connection is stablish,
+# run the migrations
+# starts the application.
 
 # assign a default for the database_user / role
 DB_ROLE=${POSTGRES_ROLE:-postgres}

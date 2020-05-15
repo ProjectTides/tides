@@ -2,7 +2,7 @@
 # docker entrypoint script.
 
 # assign a default for the database_user / role
-DB_ROLE=${DATABASE_ROLE:-postgres}
+DB_ROLE=${POSTGRES_ROLE:-postgres}
 DB_HOST=${DATABASE_HOST:-db}
 
 # wait until Postgres is ready

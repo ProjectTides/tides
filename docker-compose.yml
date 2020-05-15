@@ -19,7 +19,7 @@ services:
     db:
         image: postgres:10-alpine
         ports:
-            - 5432:5432
+            - 5432:${DATABASE_PORT}
         volumes:
             - ./docker-volumes/postgresql:/var/lib/postgresql
             - ./build_scripts/pg:/docker-entrypoint-initdb.d
@@ -28,6 +28,6 @@ services:
             - POSTGRES_USER=${DATABASE_USER}
             - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
             - POSTGRES_MULTIPLE_DATABASES=${POSTGRES_MULTIPLE_DATABASES}
-            - DATABASE_ROLE=${DATABASE_ROLE}
+            - POSTGRES_ROLE=${POSTGRES_ROLE}
             - DATABASE_HOST=${DATABASE_HOST}
 

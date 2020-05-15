@@ -1,8 +1,5 @@
 FROM elixir:1.9-alpine as build
-# MAINTAINER tech@coloredcow.com
-
-# install build dependencies
-# RUN apk add --update git build-base nodejs npm yarn python
+MAINTAINER opensource@coloredcow.com
 
 RUN mkdir /app
 WORKDIR /app
@@ -19,20 +16,11 @@ COPY config config
 RUN mix deps.get --only prod
 RUN mix deps.compile
 
-# build assets
-# COPY assets assets
-# RUN cd assets && npm install && npm run deploy
-# RUN mix phx.digest
-
 # build project
 COPY priv priv
 COPY lib lib
 RUN mix compile
 
-# build release
-# at this point we should copy the rel directory but
-# we are not using it so we can omit it
-# COPY rel rel
 RUN mix release
 
 # prepare release image

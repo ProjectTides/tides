@@ -9,7 +9,7 @@ config :project_tides, ProjectTides.Repo,
   username: "user1",
   password: "pass1",
   # database: "project_tides_test#{System.get_env("MIX_TEST_PARTITION")}",
-  database: "test_db",
+  database: "testdb",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox,
   port: 5460

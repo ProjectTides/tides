@@ -1,40 +1,23 @@
 {
-    "AWSEBDockerrunVersion": 2,
-    "containerDefinitions": [
-        {
-            "name": "app",
-            "image": "023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides:latest",
-            "memory": 128,
-            "command": [
-                "tail",
-                "-f",
-                "/bin/bash"
-            ],
-            "portMappings": [
-                {
-                    "hostPort": 80,
-                    "containerPort": 4000
-                }
-            ],
-            "links": [
-                "db"
-            ]
-        },
-        {
-            "name": "db",
-            "image": "postgres:10-alpine",
-            "memory": 128,
-            "command": [
-                "tail",
-                "-f",
-                "/bin/bash"
-            ],
-            "portMappings": [
-                {
-                    "hostPort": 5432,
-                    "containerPort": 5432
-                }
-            ]
+    "AWSEBDockerrunVersion": 1,
+    "volumes": [
+      {
+        "name": "app",
+        "host": {
+          "sourcePath": "/app"
         }
+      }
+    ],
+    "containerDefinitions": [
+      {
+        "name": "app",
+        "essential": true,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "containerPort": 4000
+          }
+        ]
+      }
     ]
-}
+  }

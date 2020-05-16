@@ -1,23 +1,36 @@
 {
-    "AWSEBDockerrunVersion": 1,
-    "volumes": [
-      {
-        "name": "app",
-        "host": {
-          "sourcePath": "/app"
-        }
-      }
-    ],
+    "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
-      {
-        "name": "app",
-        "essential": true,
-        "portMappings": [
-          {
-            "hostPort": 80,
-            "containerPort": 4000
-          }
-        ]
-      }
+        {
+            "name": "app",
+            "image": "023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides:latest",
+            "memory": 128,
+            "command": [
+                "tail",
+                "-f",
+                "/bin/bash"
+            ],
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "containerPort": 4000
+                }
+            ],
+            "links": [
+                "build"
+            ]
+        },
+        {
+            "name": "build",
+            "image": "alpine:3.11",
+            "memory": 128,
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "containerPort": 4000
+                }
+            ]
+        }
     ]
-  }
+}

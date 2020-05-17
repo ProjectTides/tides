@@ -1,0 +1,36 @@
+# buildspec.yml
+version: 0.2
+
+phases:
+
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR.
+      - aws --version
+    #   - $(aws ecr get-login --no-include-email --region ap-south-1)
+      - $(aws ecr get-login-password --region ap-south-1)
+      - REPOSITORY_URI=023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=${COMMIT_HASH:=latest}
+  build:
+    commands:
+      - echo Build started on `date`
+    #   - npm run build
+    #   - npm run test
+    #   - npm run migrate
+    #   - npm run test:e2e
+      - docker build -t $REPOSITORY_URI:latest .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker images...
+      - docker push $REPOSITORY_URI:latest
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
+# cache:
+#   paths:
+#     - 'node_modules/**/*'
+artifacts:
+  files:
+    - '**/*'
+  name: project-tides-$(date +%Y-%m-%d)

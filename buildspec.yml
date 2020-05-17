@@ -7,7 +7,6 @@ phases:
     commands:
       - echo Logging in to Amazon ECR.
       - aws --version
-    #   - $(aws ecr get-login --no-include-email --region ap-south-1)
       - $(aws ecr get-login-password --region ap-south-1)
       - REPOSITORY_URI=023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)

@@ -1,23 +1,13 @@
 {
     "AWSEBDockerrunVersion": 1,
-    "volumes": [
-      {
-        "name": "app",
-        "host": {
-          "sourcePath": "/app"
+    "Image": {
+        "Name": "023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides:latest",
+        "Update": "true"
+      },
+      "Ports": [
+        {
+          "HostPort": "80",
+          "ContainerPort": "4000"
         }
-      }
-    ],
-    "containerDefinitions": [
-      {
-        "name": "app",
-        "essential": true,
-        "portMappings": [
-          {
-            "hostPort": 80,
-            "containerPort": 4000
-          }
-        ]
-      }
-    ]
+      ]
   }

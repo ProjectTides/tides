@@ -1,6 +1,6 @@
 #!/bin/bash
 # It is getting called from Dockerfile
-# it is used to check if database connection is stablish,
+# it is used to check if database connection is established,
 # run the migrations
 # starts the application.
 

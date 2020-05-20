@@ -1,4 +1,9 @@
-# Project Tides
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
 
 Tides is a two-way chat platform between NGOs and their impact community that is built using WhatsApp API. The platform allows NGOs to chat with each of their beneficiaries and help them to uplift their lives. NGOs can work in various sectors such as healthcare, education, women empowerment, and more… so for education, an NGO can chat with a beneficiary to help them with the admission process, share study material or learn other ways they can intervene.
 
@@ -15,13 +20,12 @@ This prototype repository covers the various technologies, connect the dots and 
 
 ## Table of Contents
 
-- [Project Tides](#project-tides)
-  - [About the prototype](#about-the-prototype)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Contributing](#contributing)
-  - [Support + Feedback](#support--feedback)
-  - [License](#license)
+- [About the prototype](#about-the-prototype)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [Support + Feedback](#support--feedback)
+- [License](#license)
 
 ## Installation
 

@@ -1,4 +1,11 @@
-# Contributing to Project Tides
+---
+layout: default
+title: General Contributing
+parent: Getting started
+nav_order: 2
+---
+
+# General Contributing guidelines
 
 A big welcome and thank you for considering contributing to Project Tides! It’s people like you that make it a reality for users in our community.
 
@@ -6,7 +13,7 @@ Reading and following these guidelines will help us make the contribution proces
 
 ## Quicklinks
 
-- [Contributing to Project Tides](#contributing-to-project-tides)
+- [General Contributing guidelines](#general-contributing-guidelines)
   - [Quicklinks](#quicklinks)
   - [Getting Started](#getting-started)
     - [Issues](#issues)

@@ -1,3 +1,5 @@
+# This file will be handling production database migrations
+# Called from "build_scripts/entrypoint.sh" just before starting up application
 defmodule ProjectTides.Release do
     @app :project_tides
   

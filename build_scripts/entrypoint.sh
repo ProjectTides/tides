@@ -1,9 +1,12 @@
 #!/bin/bash
-# docker entrypoint script.
+# It is getting called from Dockerfile
+# it is used to check if database connection is established,
+# run the migrations
+# starts the application.
 
 # assign a default for the database_user / role
 # DB_ROLE=${DATABASE_ROLE:-postgres}
-# DB_HOST=${DATABASE_HOST:-db}
+# DB_HOST=${DATABASE_HOST:-localhost}
 
 # # wait until Postgres is ready
 # while ! pg_isready -q -h $DB_HOST -p 5432 -U $DB_ROLE

@@ -1,4 +1,6 @@
-# File: project_tides/config/releases.exs
+# In this file, we load production configuration and secrets from environment variables.
+# Added few checks for debug.
+# This file will be used for production release only.
 import Config
 db_host = System.get_env("DATABASE_HOST") || 
   raise """

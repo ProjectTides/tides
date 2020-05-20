@@ -1,4 +1,11 @@
-# Contributor Code of Conduct
+---
+layout: default
+title: Code of Conduct
+nav_order: 2
+parent: About
+---
+
+# Code of Conduct
 
 Trust, respect, collaboration and transparency are core values we believe should live and breathe within our projects. Our community welcomes participants from around the world with different experiences, unique perspectives, and great ideas to share.
 

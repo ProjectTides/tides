@@ -1,33 +1,14 @@
 version: "3"
 
 services:
-    app:
-        image: project_tides:0.1.0
-        build:
-            context: .
-        environment:
-            - SECRET_KEY_BASE=${SECRET_KEY_BASE}
-            - DATABASE_DB=${DATABASE_DB}
-            - DATABASE_HOST=${DATABASE_HOST}
-            - DATABASE_USER=${DATABASE_USER}
-            - DATABASE_PASSWORD=${DATABASE_PASSWORD}
-            - BASE_URL=${BASE_URL}
-        ports:
-            - 4000:4000
-        depends_on: 
-            - db
-    db:
-        image: postgres:10-alpine
-        ports:
-            - 5432:${DATABASE_PORT}
-        volumes:
-            - ./docker-volumes/postgresql:/var/lib/postgresql
-            - ./build_scripts/pg:/docker-entrypoint-initdb.d
-        environment:
-            # - POSTGRES_DB=${DATABASE_DB}
-            - POSTGRES_USER=${DATABASE_USER}
-            - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
-            - POSTGRES_MULTIPLE_DATABASES=${POSTGRES_MULTIPLE_DATABASES}
-            - POSTGRES_ROLE=${POSTGRES_ROLE}
-            - DATABASE_HOST=${DATABASE_HOST}
+  db:
+    image: postgres:10-alpine
+    ports:
+      - 5677:5432
+    volumes:
+      - ./docker-volumes/postgresql:/var/lib/postgresql
+    environment:
+      - POSTGRES_USER=user1
+      - POSTGRES_PASSWORD=pass1
+      - POSTGRES_DB=main_db
 

@@ -25,21 +25,24 @@ This prototype repository covers the various technologies, connect the dots and 
 
 ## Installation
 
-1. Duplicate the file `.env.example` and name it as `.env`.
-2. Add the env variables. Few variables are docker specific and can be skipped.
-    1. [POSTGRES_MULTIPLE_DATABASES, POSTGRES_ROLE]
-3. Run `mix phx.gen.secret` to generate secret and add it to env variable `SECRET_KEY_BASE`
+### Prerequisite:
+1. Elixir 1.6 or later
+2. Erlang 20 or later
+3. Phoenix
 
-4. Database setup
+### Setup Guide
+1. Run `mix phx.gen.secret` to generate secret and add it to env variable `SECRET_KEY_BASE`
+
+2. Database setup
     1. Dockerized project setup
         * `docker-compose config` Check if docker config and env variables are set properly. 
         * `docker-compose up -d` Start the container.
     2. Non-dockerized project setup
         * Create your application database manually.
 
-5. Duplicate the file `dev.exs.example` and name it as `dev.exs`.
-6. Run `mix setup`.
-7. Run `mix phx.server`
+3. Duplicate the file `dev.exs.example` and name it as `dev.exs`.
+4. Run `mix setup`.
+5. Run `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 

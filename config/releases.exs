@@ -11,8 +11,6 @@ db_username = System.get_env("DATABASE_USER") || "postgres"
 db_password = System.get_env("DATABASE_PASSWORD") || "postgres"
 db_url = "ecto://#{db_username}:#{db_password}@#{db_host}/#{db_database}"
 
-IO.puts "You forgot to give me #{db_url}"
-
 config :project_tides, ProjectTides.Repo,
   url:  db_url,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),

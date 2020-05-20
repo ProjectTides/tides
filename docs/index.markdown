@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 ---
 
@@ -35,9 +32,9 @@ We're working hard to bring you a clean & concise guideline for installation. Pl
 
 We appreciate feedback and contribution to this repo! Before you get started, please see the following:
 
-- [ProjectTides's general contribution guidelines](GENERAL-CONTRIBUTING.md)
-- [ProjectTides's code of conduct guidelines](CODE-OF-CONDUCT.md)
-- [This repo's contribution guide](CONTRIBUTING.md)
+- [ProjectTides's general contribution guidelines](GENERAL-CONTRIBUTING)
+- [ProjectTides's code of conduct guidelines](CODE-OF-CONDUCT)
+- [This repo's contribution guide](CONTRIBUTING)
 
 ## Support + Feedback
 

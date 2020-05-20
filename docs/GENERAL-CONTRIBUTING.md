@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Contributing to Project Tides
 
 A big welcome and thank you for considering contributing to Project Tides! It’s people like you that make it a reality for users in our community.

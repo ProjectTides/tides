@@ -16,12 +16,12 @@ This prototype repository covers the various technologies, connect the dots and 
 ## Table of Contents
 
 - [Project Tides](#project-tides)
-	- [About the prototype](#about-the-prototype)
-	- [Table of Contents](#table-of-contents)
-	- [Installation](#installation)
-	- [Contributing](#contributing)
-	- [Support + Feedback](#support--feedback)
-	- [License](#license)
+  - [About the prototype](#about-the-prototype)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Contributing](#contributing)
+  - [Support + Feedback](#support--feedback)
+  - [License](#license)
 
 ## Installation
 
@@ -32,7 +32,7 @@ This prototype repository covers the various technologies, connect the dots and 
 
 4. Database setup
     1. Dockerized project setup
-        * `docker-compose config` Check if docker config and env variables are set properly. 
+        * `docker-compose config` Check if docker config and env variables are set properly.
         * `docker-compose up -d` Start the container.
     2. Non-dockerized project setup
         * Create your application database manually.
@@ -47,9 +47,9 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 We appreciate feedback and contribution to this repo! Before you get started, please see the following:
 
-- [ProjectTides's general contribution guidelines](GENERAL-CONTRIBUTING.md)
-- [ProjectTides's code of conduct guidelines](CODE-OF-CONDUCT.md)
-- [This repo's contribution guide](CONTRIBUTING.md)
+- [ProjectTides's general contribution guidelines](docs/GENERAL-CONTRIBUTING.md)
+- [ProjectTides's code of conduct guidelines](docs/CODE-OF-CONDUCT.md)
+- [This repo's contribution guide](docs/CONTRIBUTING.md)
 
 ## Support + Feedback
 

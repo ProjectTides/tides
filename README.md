@@ -40,6 +40,16 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 ## Documentation
 ProjectTides's documentation is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://projecttides.github.io/tides/>.
 
+## Resources
+
+1. **Elixir**
+    1. [Elixir basics](https://elixir-lang.org/getting-started/introduction.html)
+2. **CI**
+    1. [Phoenix github action for CI](https://phxroad.com/devops/github-actions-for-phoenix)
+3. **CD**
+    1. [Dockerized production env](https://medium.com/@j.schlacher_32979/release-a-phoenix-application-with-docker-and-postgres-28c6ae8c7184)
+    2. [Deploying Docker Containers Using an AWS CodePipeline](https://www.infoq.com/articles/aws-codepipeline-deploy-docker/)
+
 ## Contributing
 
 We appreciate feedback and contribution to this repo! Before you get started, please see the following:

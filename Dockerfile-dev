@@ -7,7 +7,8 @@ WORKDIR /app
 
 # Install hex package manager
 RUN rm -rf deps && rm -rf _build
-RUN mix do local.hex --force, local.rebar --force
+RUN mix local.hex --force
+RUN mix local.rebar --force
 
 RUN apk add --update bash openssl postgresql-client
 
@@ -20,5 +21,5 @@ RUN mix do compile
 RUN chown -R nobody: /app
 USER nobody
 ENV HOME=/app
-#RUN mix do local.hex --force
+
 CMD ["bash", "/app/build_scripts/entrypoint_dev.sh"]

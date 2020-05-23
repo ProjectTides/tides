@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+nav_order: 1
+---
+
 # Project Tides
 
 Tides is a two-way chat platform between NGOs and their impact community that is built using WhatsApp API. The platform allows NGOs to chat with each of their beneficiaries and help them to uplift their lives. NGOs can work in various sectors such as healthcare, education, women empowerment, and more… so for education, an NGO can chat with a beneficiary to help them with the admission process, share study material or learn other ways they can intervene.
@@ -10,41 +16,30 @@ This prototype repository covers the various technologies, connect the dots and 
 4. A basic response will be suggested too.
 5. The NPO user will use the suggestion from the system to form a response and then send it to the beneficiary.
 
-## Status
 ![CI](https://img.shields.io/github/workflow/status/ProjectTides/tides/CI?label=CI&logo=github&style=flat-square)
 ![License](https://img.shields.io/github/license/ProjectTides/tides?style=flat-square)
 
+## Table of Contents
+
+- [Project Tides](#project-tides)
+  - [About the prototype](#about-the-prototype)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Contributing](#contributing)
+  - [Support + Feedback](#support--feedback)
+  - [License](#license)
+
 ## Installation
 
-### Prerequisite:
-1. Elixir 1.6 or later
-2. Erlang 20 or later
-3. Phoenix
-
-### Setup Guide
-* Duplicate the file `dev.exs.example` and name it as `dev.exs`.
-
-#### Dockerized project setup
-* `docker-compose config` Check if docker config and env variables are set properly.
-* `docker-compose up -d` Start the container.
-
-#### Non-dockerized project setup
-* Create your application database manually and update the database variables.
-* Run `mix setup`.
-* Run `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-## Documentation
-ProjectTides's documentation is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://projecttides.github.io/tides/>.
+We're working hard to bring you a clean & concise guideline for installation. Please check back later.
 
 ## Contributing
 
 We appreciate feedback and contribution to this repo! Before you get started, please see the following:
 
-- [ProjectTides's general contribution guidelines](https://projecttides.github.io/tides/getting-started/general-contributing)
-- [This repo's contribution guide](https://projecttides.github.io/tides/getting-started/contributing)
-- [ProjectTides's code of conduct guidelines](https://projecttides.github.io/tides/about/code-of-conduct)
+- [ProjectTides's general contribution guidelines](/getting-started/general-contributing)
+- [ProjectTides's code of conduct guidelines](/about/code-of-conduct)
+- [This repo's contribution guide](/getting-started/contributing)
 
 ## Support + Feedback
 

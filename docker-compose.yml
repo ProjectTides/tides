@@ -1,0 +1,40 @@
+version: "3"
+networks:
+  internal:
+    external: false
+
+services:
+    app:
+        container_name: project_tides_app
+        build:
+          context: .
+          dockerfile: Dockerfile-dev
+        environment:
+          - DATABASE_USER=user1
+          - DATABASE_PASSWORD=pass1
+          - DATABASE_DB=main_db
+          - DATABASE_PORT=5432
+          - DATABASE_HOST=db
+        ports:
+            - 4000:4000
+        volumes:
+          - .:/app
+        stdin_open: true
+        tty: true
+        networks:
+          - internal
+        depends_on: 
+            - db
+    db:
+        image: postgres:10-alpine
+        restart: always
+        ports:
+            - 5433:5432
+        volumes:
+          - ./docker-volumes/postgresql:/var/lib/postgresql
+        environment:
+          - POSTGRES_USER=user1
+          - POSTGRES_PASSWORD=pass1
+          - POSTGRES_DB=main_db
+        networks:
+          - internal

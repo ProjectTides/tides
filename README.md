@@ -22,18 +22,16 @@ This prototype repository covers the various technologies, connect the dots and 
 3. Phoenix
 
 ### Setup Guide
-1. Run `mix phx.gen.secret` to generate secret and add it to env variable `SECRET_KEY_BASE`
+* Duplicate the file `dev.exs.example` and name it as `dev.exs`.
 
-2. Database setup
-    1. Dockerized project setup
-        * `docker-compose config` Check if docker config and env variables are set properly.
-        * `docker-compose up -d` Start the container.
-    2. Non-dockerized project setup
-        * Create your application database manually.
+#### Dockerized project setup
+* `docker-compose config` Check if docker config and env variables are set properly.
+* `docker-compose up -d` Start the container.
 
-3. Duplicate the file `dev.exs.example` and name it as `dev.exs`.
-4. Run `mix setup`.
-5. Run `mix phx.server`
+#### Non-dockerized project setup
+* Create your application database manually and update the database variables.
+* Run `mix setup`.
+* Run `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 

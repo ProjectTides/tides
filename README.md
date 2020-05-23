@@ -22,23 +22,31 @@ This prototype repository covers the various technologies, connect the dots and 
 3. Phoenix
 
 ### Setup Guide
-1. Run `mix phx.gen.secret` to generate secret and add it to env variable `SECRET_KEY_BASE`
+* Duplicate the file `dev.exs.example` and name it as `dev.exs`.
 
-2. Database setup
-    1. Dockerized project setup
-        * `docker-compose config` Check if docker config and env variables are set properly.
-        * `docker-compose up -d` Start the container.
-    2. Non-dockerized project setup
-        * Create your application database manually.
+#### Dockerized project setup
+* `docker-compose config` Check if docker config and env variables are set properly.
+* `docker-compose up -d` Start the container.
 
-3. Duplicate the file `dev.exs.example` and name it as `dev.exs`.
-4. Run `mix setup`.
-5. Run `mix phx.server`
+#### Non-dockerized project setup
+* Create your application database manually and update the database variables.
+* Run `mix setup`.
+* Run `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Documentation
 ProjectTides's documentation is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://projecttides.github.io/tides/>.
+
+## Resources
+
+1. **Elixir**
+    1. [Elixir basics](https://elixir-lang.org/getting-started/introduction.html)
+2. **CI**
+    1. [Phoenix github action for CI](https://phxroad.com/devops/github-actions-for-phoenix)
+3. **CD**
+    1. [Dockerized production env](https://medium.com/@j.schlacher_32979/release-a-phoenix-application-with-docker-and-postgres-28c6ae8c7184)
+    2. [Deploying Docker Containers Using an AWS CodePipeline](https://www.infoq.com/articles/aws-codepipeline-deploy-docker/)
 
 ## Contributing
 

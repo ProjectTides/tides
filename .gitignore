@@ -31,7 +31,7 @@ project_tides-*.tar
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-.ebextensions/environment.config
+# .ebextensions/environment.config
 
 config/dev.exs
 .DS_Store

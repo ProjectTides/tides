@@ -8,8 +8,8 @@ defmodule ProjectTidesWeb.ErrorViewTest do
     assert render(ProjectTidesWeb.ErrorView, "404.json", []) == %{errors: %{detail: "Not Found"}}
   end
 
-  test "renders 500.json" do
-    assert render(ProjectTidesWeb.ErrorView, "500.json", []) ==
+  test "renders 403.json" do
+    assert render(ProjectTidesWeb.ErrorView, "403.json", []) ==
              %{errors: %{detail: "Internal Server Error"}}
   end
 end

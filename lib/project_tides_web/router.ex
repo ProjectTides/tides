@@ -12,10 +12,10 @@ defmodule ProjectTidesWeb.Router do
   scope "/" do
     pipe_through :api
 
-    forward "/api", Absinthe.Plug, schema: TwoWayWeb.Schema
+    forward "/api", Absinthe.Plug, schema: ProjectTidesWeb.Schema
 
     forward "/graphiql", Absinthe.Plug.GraphiQL,
-      schema: TwoWayWeb.Schema,
+      schema: ProjectTidesWeb.Schema,
       interface: :simple
   end
 

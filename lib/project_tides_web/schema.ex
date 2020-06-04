@@ -2,6 +2,7 @@ defmodule ProjectTidesWeb.Schema do
   use Absinthe.Schema
 
   alias ProjectTidesWeb.Schema.Middleware
+  alias ProjectTidesWeb.Resolvers.UserResolver
 
   def middleware(middleware, _field, %{identifier: :mutation}) do
     middleware ++ [Middleware.ChangesetErrors]
@@ -17,11 +18,24 @@ defmodule ProjectTidesWeb.Schema do
 
   import_types(Absinthe.Type.Custom)
 
-  query do
+  object :user do
+    field :id, non_null(:id)
+    field :name, non_null(:string)
+    field :email, non_null(:string)
+  end
 
+  query do
+     field :all_users, non_null(list_of(non_null(:user))) do
+      resolve(&UserResolver.all_users/3)
+     end
   end
 
   mutation do
+    field :login_user, :user do
+      arg :email, non_null(:string)
+      arg :password, non_null(:string)
+      resolve &UserResolver.login_user/3
+    end
   end
 
 

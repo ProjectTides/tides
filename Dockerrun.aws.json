@@ -3,11 +3,11 @@
     "Image": {
         "Name": "023004991146.dkr.ecr.ap-south-1.amazonaws.com/tides:latest",
         "Update": "true"
-      },
-      "Ports": [
+    },
+    "Ports": [
         {
           "HostPort": "80",
           "ContainerPort": "4000"
         }
-      ]
-  }
+    ]
+}

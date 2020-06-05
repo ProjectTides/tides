@@ -36,6 +36,12 @@ defmodule ProjectTidesWeb.Schema do
       arg :password, non_null(:string)
       resolve &UserResolver.login_user/3
     end
+
+    field :login_user_via_email, :user do
+      arg :email, non_null(:string)
+      arg :password, non_null(:string)
+      resolve &UserResolver.login_user_via_email/3
+    end
   end
 
 

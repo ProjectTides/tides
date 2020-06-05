@@ -37,6 +37,12 @@ defmodule ProjectTides.Accounts do
   """
   def get_user!(id), do: Repo.get!(User, id)
 
+  def get_by_email(email) do
+    User |> Repo.get_by(email: email)
+  end
+
+  # Friends.Person |> Friends.Repo.get_by(first_name: "Ryan")
+
   @doc """
   Creates a user.
 

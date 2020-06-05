@@ -13,4 +13,9 @@ defmodule ProjectTidesWeb.Resolvers.UserResolver do
     {:ok, user}
   end
 
+  def login_user_via_email(_root, args, _info) do
+    user = Accounts.get_by_email(args.email)
+    {:ok, user}
+  end
+
 end

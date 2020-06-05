@@ -9,6 +9,16 @@ defmodule ProjectTidesWeb.Router do
     pipe_through :api
   end
 
+  scope "/" do
+    pipe_through :api
+
+    forward "/api", Absinthe.Plug, schema: ProjectTidesWeb.Schema
+
+    forward "/graphiql", Absinthe.Plug.GraphiQL,
+      schema: ProjectTidesWeb.Schema,
+      interface: :simple
+  end
+
   # Enables LiveDashboard only for development
   #
   # If you want to use the LiveDashboard in production, you should put

@@ -10,6 +10,7 @@ db_database = System.get_env("DATABASE_DB") || "postgres"
 db_username = System.get_env("DATABASE_USER") || "postgres" 
 db_password = System.get_env("DATABASE_PASSWORD") || "postgres"
 db_url = "ecto://#{db_username}:#{db_password}@#{db_host}/#{db_database}"
+
 config :project_tides, ProjectTides.Repo,
   url:  db_url,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
@@ -21,6 +22,4 @@ secret_key_base = System.get_env("SECRET_KEY_BASE") ||
   """ 
 config :project_tides, ProjectTidesWeb.Endpoint,
   server: true,
-  http: [:inet6, port: 4000],
-  secret_key_base: secret_key_base,
-  url: [host: System.get_env("BASE_URL"), port: 80]
+  http: [:inet6, port: 4000]

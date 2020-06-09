@@ -34,6 +34,7 @@ defmodule ProjectTidesWeb.Schema do
   import_types(__MODULE__.MessageTagTypes)
   import_types(__MODULE__.OrganizationTypes)
   import_types(__MODULE__.BSPTypes)
+  import_types(__MODULE__.UserTypes)
 
   query do
     import_fields(:language_queries)
@@ -51,6 +52,8 @@ defmodule ProjectTidesWeb.Schema do
     import_fields(:organization_queries)
 
     import_fields(:bsp_queries)
+
+    import_fields(:user_queries)
   end
 
   mutation do

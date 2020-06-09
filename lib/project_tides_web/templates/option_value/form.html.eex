@@ -1,0 +1,66 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <%= label f, :label %>
+  <%= text_input f, :label %>
+  <%= error_tag f, :label %>
+
+  <%= label f, :description %>
+  <%= text_input f, :description %>
+  <%= error_tag f, :description %>
+
+  <%= label f, :value %>
+  <%= text_input f, :value %>
+  <%= error_tag f, :value %>
+
+  <%= label f, :grouping %>
+  <%= text_input f, :grouping %>
+  <%= error_tag f, :grouping %>
+
+  <%= label f, :filter %>
+  <%= number_input f, :filter %>
+  <%= error_tag f, :filter %>
+
+  <%= label f, :weight %>
+  <%= number_input f, :weight %>
+  <%= error_tag f, :weight %>
+
+  <%= label f, :is_default %>
+  <%= checkbox f, :is_default %>
+  <%= error_tag f, :is_default %>
+
+  <%= label f, :is_optgroup %>
+  <%= checkbox f, :is_optgroup %>
+  <%= error_tag f, :is_optgroup %>
+
+  <%= label f, :is_reserved %>
+  <%= checkbox f, :is_reserved %>
+  <%= error_tag f, :is_reserved %>
+
+  <%= label f, :is_active %>
+  <%= checkbox f, :is_active %>
+  <%= error_tag f, :is_active %>
+
+  <br>
+
+  <select name="option_value[option_group_id]" id="option_value_option_group_id">
+
+      <option value="">Select Option Group ...</option>
+      <%= for option_group <- @option_groups do %>
+  
+          <option value="<%= option_group.id %>">
+          <%= option_group.name %>
+          </option>
+  
+      <% end %>
+  
+  </select>
+
+  <div>
+    <%= submit "Save" %>
+  </div>
+<% end %>

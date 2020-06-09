@@ -1,0 +1,38 @@
+<h1>Listing Session messages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label</th>
+      <th>Body</th>
+      <th>Is reserved</th>
+      <th>Is active</th>
+      <th>Is source</th>
+      <th>Is translated</th>
+      <th>Language</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for session_message <- @session_messages do %>
+    <tr>
+      <td><%= session_message.label %></td>
+      <td><%= session_message.body %></td>
+      <td><%= session_message.is_reserved %></td>
+      <td><%= session_message.is_active %></td>
+      <td><%= session_message.is_source %></td>
+      <td><%= session_message.is_translated %></td>
+      <td><%= session_message.language_id %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.session_message_path(@conn, :show, session_message) %></span>
+        <span><%= link "Edit", to: Routes.session_message_path(@conn, :edit, session_message) %></span>
+        <span><%= link "Delete", to: Routes.session_message_path(@conn, :delete, session_message), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Session message", to: Routes.session_message_path(@conn, :new) %></span>

@@ -1,0 +1,11 @@
+{application,ex_rated,
+             [{applications,[kernel,stdlib,elixir,logger,ex2ms]},
+              {description,"ExRated, the OTP GenServer with the naughty name that allows you to rate-limit calls\nto any service that requires it.\n\nFor example, rate-limit calls to your favorite API which requires no more\nthan `limit` API calls within a `scale` milliseconds time window.\n"},
+              {modules,['Elixir.ExRated','Elixir.ExRated.App',
+                        'Elixir.ExRated.Utils']},
+              {registered,[]},
+              {vsn,"1.3.3"},
+              {env,[{timeout,90000000},
+                    {cleanup_rate,60000},
+                    {ets_table_name,ex_rated_buckets}]},
+              {mod,{'Elixir.ExRated.App',[]}}]}.

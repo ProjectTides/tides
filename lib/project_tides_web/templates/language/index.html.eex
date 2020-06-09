@@ -1,0 +1,32 @@
+<h1>Listing Languages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label</th>
+      <th>Description</th>
+      <th>Locale</th>
+      <th>Is active</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for language <- @languages do %>
+    <tr>
+      <td><%= language.label %></td>
+      <td><%= language.description %></td>
+      <td><%= language.locale %></td>
+      <td><%= language.is_active %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.language_path(@conn, :show, language) %></span>
+        <span><%= link "Edit", to: Routes.language_path(@conn, :edit, language) %></span>
+        <span><%= link "Delete", to: Routes.language_path(@conn, :delete, language), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Language", to: Routes.language_path(@conn, :new) %></span>

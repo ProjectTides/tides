@@ -1,0 +1,5 @@
+<h1>Edit Option value</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.option_value_path(@conn, :update, @option_value)) %>
+
+<span><%= link "Back", to: Routes.option_value_path(@conn, :index) %></span>

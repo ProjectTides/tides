@@ -1,0 +1,33 @@
+<h1>Show Tag</h1>
+
+<ul>
+
+  <li>
+    <strong>Label:</strong>
+    <%= @tag.label %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @tag.description %>
+  </li>
+
+  <li>
+    <strong>Is reserved:</strong>
+    <%= @tag.is_reserved %>
+  </li>
+
+  <li>
+    <strong>Is active:</strong>
+    <%= @tag.is_active %>
+  </li>
+
+  <li>
+    <strong>Language:</strong>
+    <%= @tag.language_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.tag_path(@conn, :edit, @tag) %></span>
+<span><%= link "Back", to: Routes.tag_path(@conn, :index) %></span>

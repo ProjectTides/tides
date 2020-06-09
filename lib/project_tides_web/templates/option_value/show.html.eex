@@ -1,0 +1,58 @@
+<h1>Show Option value</h1>
+
+<ul>
+
+  <li>
+    <strong>Label:</strong>
+    <%= @option_value.label %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @option_value.description %>
+  </li>
+
+  <li>
+    <strong>Value:</strong>
+    <%= @option_value.value %>
+  </li>
+
+  <li>
+    <strong>Grouping:</strong>
+    <%= @option_value.grouping %>
+  </li>
+
+  <li>
+    <strong>Filter:</strong>
+    <%= @option_value.filter %>
+  </li>
+
+  <li>
+    <strong>Weight:</strong>
+    <%= @option_value.weight %>
+  </li>
+
+  <li>
+    <strong>Is default:</strong>
+    <%= @option_value.is_default %>
+  </li>
+
+  <li>
+    <strong>Is optgroup:</strong>
+    <%= @option_value.is_optgroup %>
+  </li>
+
+  <li>
+    <strong>Is reserved:</strong>
+    <%= @option_value.is_reserved %>
+  </li>
+
+  <li>
+    <strong>Is active:</strong>
+    <%= @option_value.is_active %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.option_value_path(@conn, :edit, @option_value) %></span>
+<span><%= link "Back", to: Routes.option_value_path(@conn, :index) %></span>

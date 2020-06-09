@@ -1,0 +1,33 @@
+<h1>Show Message media</h1>
+
+<ul>
+
+  <li>
+    <strong>Url:</strong>
+    <%= @message_media.url %>
+  </li>
+
+  <li>
+    <strong>Original url:</strong>
+    <%= @message_media.original_url %>
+  </li>
+
+  <li>
+    <strong>Thumbnail:</strong>
+    <%= @message_media.thumbnail %>
+  </li>
+
+  <li>
+    <strong>Caption:</strong>
+    <%= @message_media.caption %>
+  </li>
+
+  <li>
+    <strong>Wa media:</strong>
+    <%= @message_media.wa_media_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.message_media_path(@conn, :edit, @message_media) %></span>
+<span><%= link "Back", to: Routes.message_media_path(@conn, :index) %></span>

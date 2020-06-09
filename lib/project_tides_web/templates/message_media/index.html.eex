@@ -1,0 +1,34 @@
+<h1>Listing Message media</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Original url</th>
+      <th>Thumbnail</th>
+      <th>Caption</th>
+      <th>Wa media</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for message_media <- @message_media do %>
+    <tr>
+      <td><%= message_media.url %></td>
+      <td><%= message_media.original_url %></td>
+      <td><%= message_media.thumbnail %></td>
+      <td><%= message_media.caption %></td>
+      <td><%= message_media.wa_media_id %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.message_media_path(@conn, :show, message_media) %></span>
+        <span><%= link "Edit", to: Routes.message_media_path(@conn, :edit, message_media) %></span>
+        <span><%= link "Delete", to: Routes.message_media_path(@conn, :delete, message_media), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Message media", to: Routes.message_media_path(@conn, :new) %></span>

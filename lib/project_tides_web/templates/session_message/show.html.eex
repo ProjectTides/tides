@@ -1,0 +1,43 @@
+<h1>Show Session message</h1>
+
+<ul>
+
+  <li>
+    <strong>Label:</strong>
+    <%= @session_message.label %>
+  </li>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @session_message.body %>
+  </li>
+
+  <li>
+    <strong>Is reserved:</strong>
+    <%= @session_message.is_reserved %>
+  </li>
+
+  <li>
+    <strong>Is active:</strong>
+    <%= @session_message.is_active %>
+  </li>
+
+  <li>
+    <strong>Is source:</strong>
+    <%= @session_message.is_source %>
+  </li>
+
+  <li>
+    <strong>Is translated:</strong>
+    <%= @session_message.is_translated %>
+  </li>
+
+  <li>
+    <strong>Language:</strong>
+    <%= @session_message.language_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.session_message_path(@conn, :edit, @session_message) %></span>
+<span><%= link "Back", to: Routes.session_message_path(@conn, :index) %></span>

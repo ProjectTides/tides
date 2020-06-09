@@ -1,0 +1,12 @@
+{application,ecto_enum,
+             [{applications,[kernel,stdlib,elixir,logger,ecto,ecto_sql]},
+              {description,"Ecto extension to support enums in models"},
+              {modules,['Elixir.EctoEnum','Elixir.EctoEnum.Postgres',
+                        'Elixir.EctoEnum.Postgres.Use',
+                        'Elixir.EctoEnum.Typespec',
+                        'Elixir.EctoEnum.Typespec.TestModule',
+                        'Elixir.EctoEnum.Typespec.TestModule.PGStatusEnum',
+                        'Elixir.EctoEnum.Typespec.TestModule.StatusEnum',
+                        'Elixir.EctoEnum.Use']},
+              {registered,[]},
+              {vsn,"1.4.0"}]}.

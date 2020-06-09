@@ -1,0 +1,38 @@
+<h1>Listing Contacts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Wa status</th>
+      <th>Wa</th>
+      <th>Status</th>
+      <th>Optin time</th>
+      <th>Optout time</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for contact <- @contacts do %>
+    <tr>
+      <td><%= contact.name %></td>
+      <td><%= contact.phone %></td>
+      <td><%= contact.wa_status %></td>
+      <td><%= contact.wa_id %></td>
+      <td><%= contact.status %></td>
+      <td><%= contact.optin_time %></td>
+      <td><%= contact.optout_time %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.contact_path(@conn, :show, contact) %></span>
+        <span><%= link "Edit", to: Routes.contact_path(@conn, :edit, contact) %></span>
+        <span><%= link "Delete", to: Routes.contact_path(@conn, :delete, contact), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Contact", to: Routes.contact_path(@conn, :new) %></span>

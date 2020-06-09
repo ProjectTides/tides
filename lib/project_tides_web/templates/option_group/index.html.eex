@@ -1,0 +1,38 @@
+<h1>Listing Option groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Label</th>
+      <th>Description</th>
+      <th>Data type</th>
+      <th>Reserved?</th>
+      <th>Active?</th>
+      <th>Locked?</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for option_group <- @option_groups do %>
+    <tr>
+      <td><%= option_group.name %></td>
+      <td><%= option_group.label %></td>
+      <td><%= option_group.description %></td>
+      <td><%= option_group.data_type %></td>
+      <td><%= option_group.is_reserved %></td>
+      <td><%= option_group.is_active %></td>
+      <td><%= option_group.is_locked %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.option_group_path(@conn, :show, option_group) %></span>
+        <span><%= link "Edit", to: Routes.option_group_path(@conn, :edit, option_group) %></span>
+        <span><%= link "Delete", to: Routes.option_group_path(@conn, :delete, option_group), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Option group", to: Routes.option_group_path(@conn, :new) %></span>

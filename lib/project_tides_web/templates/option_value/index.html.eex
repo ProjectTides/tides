@@ -1,0 +1,44 @@
+<h1>Listing Option values</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Label</th>
+      <th>Description</th>
+      <th>Value</th>
+      <th>Grouping</th>
+      <th>Filter</th>
+      <th>Weight</th>
+      <th>Is default</th>
+      <th>Is optgroup</th>
+      <th>Is reserved</th>
+      <th>Is active</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for option_value <- @option_values do %>
+    <tr>
+      <td><%= option_value.label %></td>
+      <td><%= option_value.description %></td>
+      <td><%= option_value.value %></td>
+      <td><%= option_value.grouping %></td>
+      <td><%= option_value.filter %></td>
+      <td><%= option_value.weight %></td>
+      <td><%= option_value.is_default %></td>
+      <td><%= option_value.is_optgroup %></td>
+      <td><%= option_value.is_reserved %></td>
+      <td><%= option_value.is_active %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.option_value_path(@conn, :show, option_value) %></span>
+        <span><%= link "Edit", to: Routes.option_value_path(@conn, :edit, option_value) %></span>
+        <span><%= link "Delete", to: Routes.option_value_path(@conn, :delete, option_value), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Option value", to: Routes.option_value_path(@conn, :new) %></span>

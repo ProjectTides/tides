@@ -1,0 +1,5 @@
+<h1>Edit Option group</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.option_group_path(@conn, :update, @option_group)) %>
+
+<span><%= link "Back", to: Routes.option_group_path(@conn, :index) %></span>

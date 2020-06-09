@@ -1,0 +1,33 @@
+<h1>Show Message</h1>
+
+<ul>
+
+  <li>
+    <strong>Type:</strong>
+    <%= @message.type %>
+  </li>
+
+  <li>
+    <strong>Flow:</strong>
+    <%= @message.flow %>
+  </li>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @message.body %>
+  </li>
+
+  <li>
+    <strong>Wa message:</strong>
+    <%= @message.wa_message_id %>
+  </li>
+
+  <li>
+    <strong>Wa status:</strong>
+    <%= @message.wa_status %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.message_path(@conn, :edit, @message) %></span>
+<span><%= link "Back", to: Routes.message_path(@conn, :index) %></span>

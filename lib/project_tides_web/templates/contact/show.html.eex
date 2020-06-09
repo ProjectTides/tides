@@ -1,0 +1,43 @@
+<h1>Show Contact</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @contact.name %>
+  </li>
+
+  <li>
+    <strong>Phone:</strong>
+    <%= @contact.phone %>
+  </li>
+
+  <li>
+    <strong>Wa status:</strong>
+    <%= @contact.wa_status %>
+  </li>
+
+  <li>
+    <strong>Wa:</strong>
+    <%= @contact.wa_id %>
+  </li>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @contact.status %>
+  </li>
+
+  <li>
+    <strong>Optin time:</strong>
+    <%= @contact.optin_time %>
+  </li>
+
+  <li>
+    <strong>Optout time:</strong>
+    <%= @contact.optout_time %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.contact_path(@conn, :edit, @contact) %></span>
+<span><%= link "Back", to: Routes.contact_path(@conn, :index) %></span>

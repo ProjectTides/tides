@@ -1,0 +1,43 @@
+<h1>Show Option group</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @option_group.name %>
+  </li>
+
+  <li>
+    <strong>Label:</strong>
+    <%= @option_group.label %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @option_group.description %>
+  </li>
+
+  <li>
+    <strong>Data type:</strong>
+    <%= @option_group.data_type %>
+  </li>
+
+  <li>
+    <strong>Reserved?:</strong>
+    <%= @option_group.is_reserved %>
+  </li>
+
+  <li>
+    <strong>Active?:</strong>
+    <%= @option_group.is_active %>
+  </li>
+
+  <li>
+    <strong>Locked?:</strong>
+    <%= @option_group.is_locked %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.option_group_path(@conn, :edit, @option_group) %></span>
+<span><%= link "Back", to: Routes.option_group_path(@conn, :index) %></span>

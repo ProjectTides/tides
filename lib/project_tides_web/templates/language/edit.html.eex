@@ -1,0 +1,5 @@
+<h1>Edit Language</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.language_path(@conn, :update, @language)) %>
+
+<span><%= link "Back", to: Routes.language_path(@conn, :index) %></span>

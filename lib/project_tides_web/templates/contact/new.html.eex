@@ -1,0 +1,5 @@
+<h1>New Contact</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.contact_path(@conn, :create)) %>
+
+<span><%= link "Back", to: Routes.contact_path(@conn, :index) %></span>

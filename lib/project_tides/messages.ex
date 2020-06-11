@@ -39,6 +39,16 @@ defmodule ProjectTides.Messages do
           join: c in assoc(q, :sender),
           where: ilike(c.name, ^"%#{sender}%")
 
+      {:sender_id, sender_id}, query ->
+        from q in query,
+          join: c in assoc(q, :sender),
+          where: c.id == ^sender_id
+
+      {:recipient_id, recipient_id}, query ->
+        from q in query,
+          join: c in assoc(q, :recipient),
+          where: c.id == ^recipient_id
+
       {:recipient, recipient}, query ->
         from q in query,
           join: c in assoc(q, :recipient),

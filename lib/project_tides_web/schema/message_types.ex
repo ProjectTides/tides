@@ -44,8 +44,14 @@ defmodule ProjectTidesWeb.Schema.MessageTypes do
     @desc "Match the sender"
     field :sender, :string
 
+    @desc "Match the sender id"
+    field :sender_id, :integer
+
     @desc "Match the recipient"
     field :recipient, :string
+
+    @desc "Match the recipient id"
+    field :recipient_id, :integer
 
     @desc "Match the phone with either the sender or receiver"
     field :either, :string

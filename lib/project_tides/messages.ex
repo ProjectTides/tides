@@ -19,8 +19,42 @@ defmodule ProjectTides.Messages do
   """
   def list_messages(args \\ %{}) do
     args
-    |> Repo.all(Message)
+    |> Enum.reduce(Message, fn
+      {:order, order}, query ->
+        query |> order_by({^order, :id})
+
+      {:filter, filter}, query ->
+        query |> filter_with(filter)
+    end)
+    |> Repo.all()
   end
+
+  defp filter_with(query, filter) do
+    Enum.reduce(filter, query, fn
+      {:body, body}, query ->
+        from q in query, where: ilike(q.body, ^"%#{body}%")
+
+      {:sender, sender}, query ->
+        from q in query,
+          join: c in assoc(q, :sender),
+          where: ilike(c.name, ^"%#{sender}%")
+
+      {:recipient, recipient}, query ->
+        from q in query,
+          join: c in assoc(q, :recipient),
+          where: ilike(c.name, ^"%#{recipient}%")
+
+      {:either, phone}, query ->
+        from q in query,
+          join: s in assoc(q, :sender),
+          join: r in assoc(q, :receiver),
+          where: ilike(s.phone, ^"%#{phone}%") or ilike(r.phone, ^"%#{phone}%")
+
+      {:wa_status, wa_status}, query ->
+        from q in query, where: q.wa_status == ^wa_status
+    end)
+  end
+
 
   @doc """
   Gets a single message.
